@@ -4,7 +4,7 @@ const Palabra = ({ palabraElegida, letrasCorrectas }) => {
 
   return (
     <div className="palabra">
-      {palabraElegida.split('').map((letter, i) => {
+      {palabraElegida.split('').map((letra, i) => {
         return (
           <span className="letra" key={i}>
             {letrasCorrectas.includes(letra) ? letra : ''}
