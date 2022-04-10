@@ -45,7 +45,7 @@ function App() {
     <div className="App">
       <Header />
       <div className='contenedor'>
-        <Figura />
+        <Figura letrasErradas={letrasErradas} />
         <LetrasErradas letrasErradas={letrasErradas}/>
         <Palabra palabraElegida={palabraElegida} letrasCorrectas={letrasCorrectas} />
       </div>
