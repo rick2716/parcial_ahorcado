@@ -1,13 +1,13 @@
 import React from 'react';
 // Verificacion de las palabras
-const Palabra = ({ selectedPalabra, correctLetras }) => {
+const Palabra = ({ palabraElegida, letrasCorrectas }) => {
 
   return (
     <div className="palabra">
-      {selectedPalabra.split('').map((letter, i) => {
+      {palabraElegida.split('').map((letter, i) => {
         return (
           <span className="letra" key={i}>
-            {correctLetras.includes(letra) ? letra : ''}
+            {letrasCorrectas.includes(letra) ? letra : ''}
           </span>
         )
       })}
