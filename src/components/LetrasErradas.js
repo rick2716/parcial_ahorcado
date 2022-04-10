@@ -10,7 +10,7 @@ const LetrasErradas = ({ letrasErradas }) => {
         }
         {letrasErradas
           .map((letra, i) => <span key={i}>{letra}</span>)
-          .reduce((ant, act) => prev === null ? [act] : [ant, ', ', act], null)}
+          .reduce((ant, act) => ant === null ? [act] : [ant, ', ', act], null)}
       </div>
     </div>
   )
