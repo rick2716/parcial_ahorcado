@@ -1,10 +1,10 @@
 import React from "react";
 
 const Figura = ({ letrasErradas }) => {
-  const errores = letrasErradas.lengh;
+  const errores = letrasErradas.length;
   return (
-    <div className="figura-container">
-      {/* //normal    */}
+    <svg height="250" width="200" className="figura-container">
+      {/* Cuerda    */}
       <line x1="60" y1="20" x2="140" y2="20" />
       <line x1="140" y1="20" x2="140" y2="50" />
       <line x1="60" y1="20" x2="60" y2="230" />
@@ -25,7 +25,7 @@ const Figura = ({ letrasErradas }) => {
       {errores > 4 && <line x1="140" y1="150" x2="120" y2="180" />}
 
       {errores > 5 && <line x1="140" y1="150" x2="160" y2="180" />}
-    </div>
+    </svg>
   );
 };
 

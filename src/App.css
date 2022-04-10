@@ -22,7 +22,8 @@ body, #root {
   fill: transparent;
   stroke: #fff;
   stroke-width: 4px;
-  stroke-linecap: round;}
+  stroke-linecap: round;
+}
 
 .letras-erradas-container{
   position: absolute;
