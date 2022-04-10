@@ -96,7 +96,7 @@ body, #root {
   outline: 0;
 }
 
-.notification-container {
+.notificacion-container {
   background-color: rgba(0, 0, 0, 0.3);
   border-radius: 10px 10px 0 0;
   padding: 15px 20px;
@@ -105,10 +105,10 @@ body, #root {
   transition: transform 0.3s ease-in-out;
 }
 
-.notification-container p {
+.notificacion-container p {
   margin: 0;
 }
 
-.notification-container.show {
+.notificacion-container.mostrar {
   transform: translateY(-50px);
 }

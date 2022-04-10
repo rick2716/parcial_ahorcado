@@ -1,4 +1,4 @@
-export function showNotification(setter) {
+export function mostrarNotificacion(setter) {
     setter(true);
     setTimeout(() => {
       setter(false);
@@ -8,15 +8,15 @@ export function showNotification(setter) {
   export function ganador (correcto, errada, palabra) {
     let status = 'ganaste';
   
-    // Verificar el ganador
+    // Verificar si se gano
     palabra.split('').forEach(letra => {
       if(!correcto.includes(letra)){
         status = '';
       }
     });
     
-    // Check for lose
+    // Verificar si se perdio
     if(errada.length === 6) status = 'perdiste';
   
-    return status
+    return status;
   }

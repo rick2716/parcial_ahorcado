@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Notificacion = () => {
+const Notificacion = ({ mostrarNotificacion }) => {
     return (
-        <div className='notificacion-container'>
+        <div className={`notificacion-container ${mostrarNotificacion ? 'mostrar' : ''}`}>
             <p>Ya ingresaste esta letra</p>
         </div>
     );
 };
 
-export default Popup;
+export default Notificacion;
