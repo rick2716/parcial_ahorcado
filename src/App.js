@@ -8,8 +8,13 @@ import Notificacion from './components/Notificacion';
 import {mostrarNotificacion as mostrar} from './components/controladores/controladores';
 import { useEffect, useState } from 'react';
 
-
-const palabras = ['application', 'programming', 'interface', 'wizard'];
+var inicio, juego = null;
+const palabras = ['applicacion', 'programar', 'interface', 'ventana', 'virtualidad',
+                  'multimedia', 'ballena', 'hamburguesa', 'google', 'react',
+                  'murcielago', 'ingenieria', 'ibague', 'recompensa', 'españa',
+                  'barrancabermeja', 'medellin', 'boloñesa', 'semestre', 'servidor',
+                  'mecatronica', 'biomedica', 'electrica', 'industrial', 'sistemas',
+                  'comunicacion', 'paraguay', 'gafas', 'peluche', 'buenaventura'];
 let palabraElegida = palabras[Math.floor(Math.random() * palabras.length)];
 
 function App() {
